@@ -21,6 +21,6 @@ docs: test-docs
 test-docs:
 	make test REPORTER=doc \
 					| cat docs/head.html - docs/tail.html \
-					> public/test.html
+					> public/test-docs.html
 
 .PHONY: test test-cov docs test-docs
