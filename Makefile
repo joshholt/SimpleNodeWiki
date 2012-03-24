@@ -23,4 +23,7 @@ test-docs:
 					| cat docs/head.html - docs/tail.html \
 					> public/test-docs.html
 
+deploy:
+	@git push heroku master
+
 .PHONY: test test-cov docs test-docs
