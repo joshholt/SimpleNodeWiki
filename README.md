@@ -25,6 +25,16 @@ a new wiki page. This new page has not yet been saved to disk, because you must
 submit the text on the page by clicking the submit button.
 
 
+### Deployment ###
+
+If you would like to deploy this simple wiki to heroku, everything is setup for 
+you. All you need to do is execute the following commands and your wiki will be 
+live.
+
+		> heroku create --stack=cdear && make deploy
+		> heroku open
+
+
 ### Testing ###
 
 If you care about testing and how things work within this application, then
