@@ -1,4 +1,11 @@
 h1= title
-form(method="post", action="/" + name)
-  textarea(name="markdown")= markdown
-  input(type="submit")
+#editor= markdown
+br
+button(onclick="saveEditorContent();") Save
+
+script(src="/javascripts/ace.js", type="text/javascript")
+script(src="/javascripts/theme-twilight.js", type="text/javascript")
+script(src="/javascripts/mode-markdown.js", type="text/javascript")
+script(src="/javascripts/editor.js", type="text/javascript")
+script(type="text/javascript").
+  window.savePath = "/#{name}"
