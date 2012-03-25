@@ -10,7 +10,7 @@ describe("Database Module", function() {
 				should.not.exist(err);
 				if (err) return done(err);
 				result.should.have.property('name', 'home');
-				result.should.have.property('title', 'Home Page');
+				result.should.have.property('title', 'Node Wiki');
 				result.should.have.property('exists',true);
 				result.should.have.property('markdown');
 				result.should.have.property('html');
